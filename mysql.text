@@ -1,0 +1,124 @@
+quotes:
+
+1. When you come to a fork in the road, take it.
+
+2. You can observe a lot by just watching.
+
+3. It ain’t over till it’s over.
+
+4. It’s like déjà vu all over again.
+
+5. No one goes there nowadays, it’s too crowded.
+
+6. Baseball is 90% mental and the other half is physical.
+
+7. A nickel ain’t worth a dime anymore.
+
+8. Always go to other people’s funerals, otherwise they won’t come to yours.
+
+9. We made too many wrong mistakes.
+
+10. Congratulations. I knew the record would stand until it was broken.
+
+
+
+pics:
+
+https://www.biography.com/.image/t_share/MTQ1MjUwMTM5NjI2NjEyMTkz/mickey-mantle---mini-biography.jpg
+
+http://photos.vanityfair.com/2015/09/23/5602b884873a015e454b1e52_yogi-berra-new-york-yankees-remembrance-obituary.jpg
+
+http://www.notesfromaztlan.com/wp-content/uploads/2012/12/Ted-Williams.jpg
+
+https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2017/06/26/charlie-sheen-babe-ruth-memorabilia.jpg?itok=td6TQXSI
+
+https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2011/10/field_of_dreams_kevin_costner_a_l.jpg
+
+https://www.biography.com/.image/t_share/MTQ1MjUwMTM5NjI2NjEyMTkz/mickey-mantle---mini-biography.jpg
+
+
+https://cdn-images-1.medium.com/max/1280/1*sfQssBV10Qc_gFJZ6Trslg.jpeg
+
+https://cdn.vox-cdn.com/thumbor/k22nr_sO1mzYVY1lzElH3Sy7EI4=/0x0:1238x1741/1200x800/filters:focal(392x178:590x376)/cdn.vox-cdn.com/uploads/chorus_image/image/57184401/usa_today_10350389.0.jpg
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchnAlTnV_3_NFkcnb9Qn6T41KToww6pr3gTJ0fa0Wz_ACZIhFQg
+
+https://i.ytimg.com/vi/qR8W_AmtCwc/maxresdefault.jpg
+
+http://images.performgroup.com/di/library/sporting_news/41/54/bryce-harper-nationals-getty-ftr-053017_6sv1frkygznn1r8i64utjodv6.jpg?t=1504142324&w=960&quality=70
+
+https://www.maxim.com/.image/t_share/MTQ2NDM5OTY3NDM2OTczNjk1/gettyimages-76028588.jpg
+
+
+mysql---
+
+---quotes---
+create database baseball;
+
+use baseball;
+
+create table quotes (id integer PRIMARY KEY AUTO_INCREMENT, quote text NOT NULL);
+
+insert into quotes (quote) values('When you come to a fork in the road, take it.');
+
+insert into quotes (quote) values('You can observe a lot by just watching.');
+
+insert into quotes (quote) values('It ain’t over till it’s over.');
+
+insert into quotes (quote) values('It’s like déjà vu all over again.');
+
+insert into quotes (quote) values('No one goes there nowadays, it’s too crowded.');
+
+insert into quotes (quote) values('Baseball is 90% mental and the other half is physical.');
+
+insert into quotes (quote) values('A nickel ain’t worth a dime anymore.');
+
+insert into quotes (quote) values('Always go to other people’s funerals, otherwise they won’t come to yours.');
+
+insert into quotes (quote) values('We made too many wrong mistakes.');
+
+insert into quotes (quote) values('Congratulations. I knew the record would stand until it was broken.');
+
+select * from quotes;
+
+
+---photo urls---
+
+create table photos (id integer PRIMARY KEY AUTO_INCREMENT, photo text NOT NULL);
+
+insert into photos (photo) values('https://www.biography.com/.image/t_share/MTQ1MjUwMTM5NjI2NjEyMTkz/mickey-mantle---mini-biography.jpg');
+
+insert into photos (photo) values('http://photos.vanityfair.com/2015/09/23/5602b884873a015e454b1e52_yogi-berra-new-york-yankees-remembrance-obituary.jpg
+');
+
+insert into photos (photo) values('http://www.notesfromaztlan.com/wp-content/uploads/2012/12/Ted-Williams.jpg');
+
+insert into photos (photo) values('https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2017/06/26/charlie-sheen-babe-ruth-memorabilia.jpg?itok=td6TQXSI');
+
+insert into photos (photo) values('https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2011/10/field_of_dreams_kevin_costner_a_l.jpg');
+
+insert into photos (photo) values('https://www.biography.com/.image/t_share/MTQ1MjUwMTM5NjI2NjEyMTkz/mickey-mantle---mini-biography.jpg');
+
+insert into photos (photo) values('https://cdn-images-1.medium.com/max/1280/1*sfQssBV10Qc_gFJZ6Trslg.jpeg');
+
+insert into photos (photo) values('https://cdn.vox-cdn.com/thumbor/k22nr_sO1mzYVY1lzElH3Sy7EI4=/0x0:1238x1741/1200x800/filters:focal(392x178:590x376)/cdn.vox-cdn.com/uploads/chorus_image/image/57184401/usa_today_10350389.0.jpg');
+
+insert into photos (photo) values('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchnAlTnV_3_NFkcnb9Qn6T41KToww6pr3gTJ0fa0Wz_ACZIhFQg');
+
+insert into photos (photo) values('https://i.ytimg.com/vi/qR8W_AmtCwc/maxresdefault.jpg');
+
+insert into photos (photo) values('http://images.performgroup.com/di/library/sporting_news/41/54/bryce-harper-nationals-getty-ftr-053017_6sv1frkygznn1r8i64utjodv6.jpg?t=1504142324&w=960&quality=70');
+
+insert into photos (photo) values('https://www.maxim.com/.image/t_share/MTQ2NDM5OTY3NDM2OTczNjk1/gettyimages-76028588.jpg');
+
+
+
+
+mysql: table = quotes, photos
+
+class = Quotes, photos
+
+$quotes = an array of different quote items taken from the quotes table in mysql. An instance of pdo.
+
+$photos = an array of different photo items taken from the photos table in mysql. An instance of pdo.
+

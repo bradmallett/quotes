@@ -1,0 +1,28 @@
+body {
+    
+    padding: 0px;
+    margin: 0px;
+    font-family: Futura, Helvetica, sans-serif;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    margin-top: 35px;
+    width: 25%;
+    padding: 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.quote p {
+    margin: auto;
+    text-align: center;
+    line-height: 1.2em;
+    font-size: 20px;
+}
