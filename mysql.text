@@ -37,6 +37,19 @@ https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2011/10/fi
 https://www.biography.com/.image/t_share/MTQ1MjUwMTM5NjI2NjEyMTkz/mickey-mantle---mini-biography.jpg
 
 
+https://cdn-images-1.medium.com/max/1280/1*sfQssBV10Qc_gFJZ6Trslg.jpeg
+
+https://cdn.vox-cdn.com/thumbor/k22nr_sO1mzYVY1lzElH3Sy7EI4=/0x0:1238x1741/1200x800/filters:focal(392x178:590x376)/cdn.vox-cdn.com/uploads/chorus_image/image/57184401/usa_today_10350389.0.jpg
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchnAlTnV_3_NFkcnb9Qn6T41KToww6pr3gTJ0fa0Wz_ACZIhFQg
+
+https://i.ytimg.com/vi/qR8W_AmtCwc/maxresdefault.jpg
+
+http://images.performgroup.com/di/library/sporting_news/41/54/bryce-harper-nationals-getty-ftr-053017_6sv1frkygznn1r8i64utjodv6.jpg?t=1504142324&w=960&quality=70
+
+https://www.maxim.com/.image/t_share/MTQ2NDM5OTY3NDM2OTczNjk1/gettyimages-76028588.jpg
+
+
 mysql---
 
 ---quotes---
@@ -85,4 +98,27 @@ insert into photos (photo) values('https://cdn-s3.si.com/s3fs-public/styles/marq
 insert into photos (photo) values('https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2011/10/field_of_dreams_kevin_costner_a_l.jpg');
 
 insert into photos (photo) values('https://www.biography.com/.image/t_share/MTQ1MjUwMTM5NjI2NjEyMTkz/mickey-mantle---mini-biography.jpg');
+
+insert into photos (photo) values('https://cdn-images-1.medium.com/max/1280/1*sfQssBV10Qc_gFJZ6Trslg.jpeg');
+
+insert into photos (photo) values('https://cdn.vox-cdn.com/thumbor/k22nr_sO1mzYVY1lzElH3Sy7EI4=/0x0:1238x1741/1200x800/filters:focal(392x178:590x376)/cdn.vox-cdn.com/uploads/chorus_image/image/57184401/usa_today_10350389.0.jpg');
+
+insert into photos (photo) values('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchnAlTnV_3_NFkcnb9Qn6T41KToww6pr3gTJ0fa0Wz_ACZIhFQg');
+
+insert into photos (photo) values('https://i.ytimg.com/vi/qR8W_AmtCwc/maxresdefault.jpg');
+
+insert into photos (photo) values('http://images.performgroup.com/di/library/sporting_news/41/54/bryce-harper-nationals-getty-ftr-053017_6sv1frkygznn1r8i64utjodv6.jpg?t=1504142324&w=960&quality=70');
+
+insert into photos (photo) values('https://www.maxim.com/.image/t_share/MTQ2NDM5OTY3NDM2OTczNjk1/gettyimages-76028588.jpg');
+
+
+
+
+mysql: table = quotes, photos
+
+class = Quotes, photos
+
+$quotes = an array of different quote items taken from the quotes table in mysql. An instance of pdo.
+
+$photos = an array of different photo items taken from the photos table in mysql. An instance of pdo.
 

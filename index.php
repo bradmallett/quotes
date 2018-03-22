@@ -1,15 +1,14 @@
 <?php
 
-
 require 'functions.php';
 
 require 'quotes.class.php';
 
-
 $pdo = ConnectToDb();
 
-$quotes = fetchAllQuotes($pdo);
+$quotes = fetchQuote($pdo);
 
+$photos = fetchPhoto($pdo);
 
 require 'index.view.php';
 

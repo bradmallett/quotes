@@ -1,7 +1,6 @@
 <?php
 
 function ConnectToDb() {
-
         try {
             return new PDO('mysql:host=localhost;dbname=baseball','pi', 'raspberry');
         }
@@ -10,9 +9,9 @@ function ConnectToDb() {
             die($e->getmessage());
         }
     }
-   
 
-function fetchAllQuotes($pdo) {
+
+function fetchQuote($pdo) {
 
         $statement = $pdo->prepare('SELECT * FROM quotes ORDER BY rand() LIMIT 1');
         
@@ -21,4 +20,12 @@ function fetchAllQuotes($pdo) {
         return $statement->fetchAll(PDO::FETCH_CLASS, 'Quotes');
     }
 
+function fetchPhoto($pdo) {
+
+        $statement = $pdo->prepare('SELECT * FROM photos ORDER BY rand() LIMIT 1');
+        
+        $statement->execute();
+        
+        return $statement->fetchAll(PDO::FETCH_CLASS, 'Photos');
+    }
 
